@@ -15,7 +15,7 @@ body {
 
 header {
  padding: 20px 5px;
- border-bottom: 2px solid lightgrey
+ border-bottom: 2px solid lightgrey;
 }
 
 header > img, header > span {
@@ -23,5 +23,16 @@ header > img, header > span {
 }
 
 nav {
-  padding: 10px 0;
+  padding-top: 10px;
+  border-bottom: 2px solid lightgrey;
+}
+
+#counter_num {
+  background-color: orange;
+  padding: .5em;
+  border-radius: 50%;
+}
+
+input {
+  vertical-align: middle;
 }
