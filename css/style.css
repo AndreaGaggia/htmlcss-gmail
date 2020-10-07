@@ -8,23 +8,35 @@ body {
 
 #container {
   width: 1000px;
-  height: 1000px;
-  border: 1px solid #000;
   margin: auto;
 }
 
-header {
- padding: 20px 5px;
- border-bottom: 2px solid lightgrey;
+header, nav, main {
+  border-bottom: 2px solid lightgrey;
 }
 
-header > img, header > span {
+header {
+  padding: 20px 5px;
+}
+
+header > img, header > span, div.email_item > input {
   vertical-align: middle;
+}
+
+header > span, footer > span {
+  font-size: 24px;
 }
 
 nav {
   padding-top: 10px;
-  border-bottom: 2px solid lightgrey;
+}
+
+main {
+  padding: 10px 0;
+}
+
+h2.unread_counter {
+  font-weight: normal;
 }
 
 #counter_num {
@@ -33,6 +45,31 @@ nav {
   border-radius: 50%;
 }
 
-input {
-  vertical-align: middle;
+div.email_item {
+  padding: 2px;
+  color: #000;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+div.email_item > span {
+  color: grey;
+}
+
+div.unread {
+  background-color: #fff;
+}
+
+div.read {
+  background-color: lightgrey;
+}
+
+footer {
+  text-align: center;
+  padding-top: 8px;
+}
+
+footer > span {
+  font-size: 24px;
+  font-weight: bold;
 }
